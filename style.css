@@ -1,0 +1,32 @@
+body {
+    font-family: Draft, sans-serif;
+    text-align: center;
+    background-color:antiquewhite;
+    padding: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 300px;
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+  
+  #slideshow {
+    margin-top: 20px;
+    width: 600px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  
+  #slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+  
