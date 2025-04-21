@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
   <meta charset="UTF-8">
-  <title>Imagine search service</title>
+  <title>Imagine Search Service</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script> <!-- Підключаємо script.js тільки один раз -->
 </head>
-
 <body>
-  <h1>Refactory imagine search service</h1>
+  <h1>Refactory Imagine Search Service</h1>
+
   <input type="text" id="searchInput" placeholder="Inserisci la tua richiesta...">
-  <button onclick="searchImages()">Cerca</button>
-  
-  <div id="slideshow"></div>
+  <button id="searchButton">Cerca</button>
 
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="script.js"></script>
+  <div id="imageContainer"></div> <!-- Контейнер для відображення зображень -->
 
+  <div id="slideshowContainer">
+    <h2>Slideshow</h2>
+    <img id="slideshow" src="" alt="Slideshow" style="width: 100%; max-width: 600px;"/>
+  </div>
+
+  <div id="formSection">
+    <h2>Invia immagine via email</h2>
+    <form id="emailForm">
+      <input type="text" id="senderName" placeholder="Nome mittente" required>
+      <input type="email" id="senderEmail" placeholder="Email mittente" required>
+      <input type="text" id="recipientName" placeholder="Nome destinatario" required>
+      <input type="email" id="recipientEmail" placeholder="Email destinatario" required>
+      <textarea id="message" placeholder="Messaggio personalizzato" rows="5" required></textarea>
+      <button type="submit">INVIA</button>
+    </form>
+  </div>
 </body>
 </html>
+
